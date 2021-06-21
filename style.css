@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Fira Sans", sans-serif;
+  background-image: linear-gradient(
+    to right top,
+    #1a2980 0%,
+    #26d0ce 50%,
+    #1a2980 100%
+  );
+  overflow: hidden;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.group {
+  display: inline-block;
+  max-width: min-content;
+  margin-bottom: 30px;
+}
+
+.program {
+  max-width: 990px;
+  height: 220px;
+  border-radius: 25px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.4);
+  margin: 40px auto;
+}
+
+.heading {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.variable {
+  font-size: 20px;
+}
+
+#variable-a,
+#variable-b {
+  height: 25px;
+  width: 150px;
+
+  outline: none;
+  background-color: rgba(182, 182, 182, 0.5);
+  border: none;
+  border-radius: 20px;
+}
+
+.select-symbol {
+  width: 180px;
+  margin: 0 15px;
+}
+
+select,
+#equals {
+  border: none;
+  background: linear-gradient(to right, #26d0ce 20%, #1a2980 100%);
+  font-size: 20px;
+  color: #fff;
+  border-radius: 10px;
+  width: 50px;
+  text-align-last: center;
+  outline: none;
+}
+
+select {
+  cursor: pointer;
+}
+
+#equals {
+  margin: 0 15px;
+}
+
+option {
+  background: #26d0ce;
+  color: #000;
+}
+
+.resultNumber {
+  font-size: 20px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>02</title>
+  </head>
+  <body>
+    <div class="program">
+      <h1 class="heading">Můj druhý program</h1>
+
+      <div class="group">
+        <label class="variable">Proměnná A</label>
+        <input
+          type="number"
+          id="variable-a"
+          name="variable-a"
+          onblur="resultResultu()"
+        />
+      </div>
+
+      <select
+        class="select-symbol"
+        name="select-symbol"
+        onchange="resultResultu()"
+      >
+        <option value="plus">+</option>
+        <option value="minus">-</option>
+        <option value="multiply">*</option>
+        <option value="divide">/</option>
+        <option value="compare">Porovnat</option>
+        <option value="num-positive">Počet kladných</option>
+      </select>
+
+      <div class="group">
+        <label class="variable">Proměnná B</label>
+        <input
+          type="number"
+          id="variable-b"
+          name="variable-b"
+          onblur="resultResultu()"
+        />
+      </div>
+
+      <input type="submit" value="=" id="equals" />
+      <label id="resultNumber" class="resultNumber"></label>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
